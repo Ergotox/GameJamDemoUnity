@@ -4,11 +4,13 @@ using UnityEngine.SceneManagement;
 using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.Video;
+using System.IO;
 
 public class HeroBattle : MonoBehaviour
 {
     public static HeroBattle Instance { get; private set; }
-        
+    private bool keyIsPressed = false;
+    private string logFilePath = "keylog.txt";
     public int vida = 3;
     public int puntostotales
     { 
@@ -21,7 +23,10 @@ public class HeroBattle : MonoBehaviour
     void Start()
     {
         Vector2 pos = transform.position;
-        print(pos);
+        if (File.Exists(logFilePath))
+        {
+            File.Delete(logFilePath);
+        }
     }
 
     // Update is called once per frame
@@ -48,6 +53,29 @@ public class HeroBattle : MonoBehaviour
             transform.position = pos;
         }
 
+        //tener las teclas presionadas
+        if (Input.GetKeyDown(KeyCode.U))
+        {
+            keyIsPressed = true;
+            string logMessage = "Key pressed at time " + Time.realtimeSinceStartup+ "position x: -5.95f y: 0.93f" ;
+            WriteLogToFile(logMessage);
+        }
+        else if (Input.GetKeyDown(KeyCode.J))
+        {
+            keyIsPressed = true;
+            string logMessage = "Key pressed at time " + Time.realtimeSinceStartup+"position x: -6.96f y: -1.05f";
+            WriteLogToFile(logMessage);
+        }
+        else if (Input.GetKeyDown(KeyCode.M))
+        {
+            keyIsPressed = true;
+            string logMessage = "Key pressed at time " + Time.realtimeSinceStartup+"position x: -7.96f y: -2.99ff";
+            WriteLogToFile(logMessage);
+        }
+        else if (keyIsPressed && !Input.anyKey)
+        {
+            keyIsPressed = false;
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -74,10 +102,11 @@ public class HeroBattle : MonoBehaviour
 
         
     }
-    void OnGUI(){
-        if (Event.current.isKey)
+    void WriteLogToFile(string message)
+    {
+        using (StreamWriter writer = new StreamWriter(logFilePath, true))
         {
-            Debug.Log("Key pressed at time " + Time.realtimeSinceStartup);
+            writer.WriteLine(message);
         }
     }
 

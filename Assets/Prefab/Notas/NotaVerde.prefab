@@ -76,7 +76,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: -163298477, guid: 93c33945ca2a229438c853ec56a8e42d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -198,4 +198,3 @@ MonoBehaviour:
   estaborde:
     serializedVersion: 2
     m_Bits: 8
-  "haceda\xF1o": 0

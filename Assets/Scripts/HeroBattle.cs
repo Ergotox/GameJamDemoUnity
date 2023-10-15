@@ -69,7 +69,9 @@ public class HeroBattle : MonoBehaviour
         {
             puntostotales += PuntosSumar;
             hud.ActulizarPuntos(puntostotales);
-
+            
+            BarraPoder.Instance.CambiarPoder();
+            
         }
         else
         {
@@ -78,6 +80,9 @@ public class HeroBattle : MonoBehaviour
                 vida -= 1;
                 if (vida == 0)
                 {
+
+                    animator.SetBool("Muerte", true);
+                    
                     SceneManager.LoadScene(0);
                 }
                 hud.DesactivarVida(vida);

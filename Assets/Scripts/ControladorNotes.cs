@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+
 public class ControladorNotes : MonoBehaviour
 {
     [SerializeField] private Transform[] puntos;
@@ -135,29 +136,16 @@ public class ControladorNotes : MonoBehaviour
 
     private int indiceNotaActual = 0;
 
-    // Referencia al componente AudioSource
-    [SerializeField] private AudioSource audioSource;
-
     void Update()
-{
-    // Obtener el tiempo actual de la canción
-    float tiempoActual = audioSource.time;
-
-    // Verificar si ha llegado al final de la secuencia de notas
-    if (indiceNotaActual >= secuenciaNotas.Count)
     {
-        return;
-    }
+        siguienteNote += Time.deltaTime;
+        if (siguienteNote >= tiempoNotas)
+        {
+            siguienteNote = 0;
 
-    // Calcular el tiempo de creación de la próxima nota
-    float tiempoSiguienteNota = tiempoNotas * (indiceNotaActual + 1);
-
-    // Crear la nota si ha pasado el tiempo de creación
-    if (tiempoActual >= tiempoSiguienteNota)
-    {
-        CrearNote();
+            CrearNote();
+        }
     }
-}
 
     private void CrearNote()
     {

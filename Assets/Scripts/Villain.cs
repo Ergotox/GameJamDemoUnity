@@ -13,9 +13,9 @@ public class Villain : MonoBehaviour
 
     }
 
-    public void TomarDaño(float daño)
+    public void TomarDanio(float danio)
     {
-        vida -= daño;
+        vida -= danio;
         if (vida <= 0)
         {
             Muerte();

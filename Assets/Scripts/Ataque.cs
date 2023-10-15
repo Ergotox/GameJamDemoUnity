@@ -16,7 +16,7 @@ public class Ataque : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemigo"))
         {
-            collision.GetComponent<Villain>().TomarDaño(danio);
+            collision.GetComponent<Villain>().TomarDanio(danio);
             Destroy(gameObject);
         }
     }

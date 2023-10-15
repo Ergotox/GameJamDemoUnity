@@ -5,6 +5,12 @@ using UnityEngine;
 
 public class ControladorNotes : MonoBehaviour
 {
+
+    public AudioSource theMusic;
+
+
+    public bool startPlaying;
+
     [SerializeField] private Transform[] puntos;
     [SerializeField] private GameObject[] notas;
 
@@ -131,6 +137,7 @@ public class ControladorNotes : MonoBehaviour
         1,
         2,
         1, // quinta secuencia
+
         
     };
 
@@ -152,7 +159,7 @@ public class ControladorNotes : MonoBehaviour
         int numeroNote = secuenciaNotas[indiceNotaActual];
         Vector2 posicion = posiciones[numeroNote];
 
-        Instantiate(notas[numeroNote], posicion, Quaternion.identity);
+        Instantiate(notas[Random.Range(0,notas.Length)], posicion, Quaternion.identity);
 
         indiceNotaActual++;
         if (indiceNotaActual >= secuenciaNotas.Count)

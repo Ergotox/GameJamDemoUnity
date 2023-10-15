@@ -1,18 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class HUDcontroller : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    
+    public TextMeshProUGUI puntos;
+    public GameObject[] vidas;
 
-    // Update is called once per frame
     void Update()
     {
-        
+        puntos.text = HeroBattle.Instance.puntostotales.ToString();
     }
+
+    public void ActulizarPuntos(int puntoTotales)
+    {
+        puntos.text = puntoTotales.ToString();
+    }
+
+    public void DesactivarVida(int indice)
+    {
+        vidas[indice].SetActive(false);
+    }
+    public void ActivarVida(int indice)
+    {
+        vidas[indice].SetActive(true);
+    }
+
 }

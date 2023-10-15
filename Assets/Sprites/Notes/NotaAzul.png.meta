@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 93c33945ca2a229438c853ec56a8e42d
+guid: 1e69cb81003aea249abf17a0b5e96254
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -106,6 +106,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -113,10 +126,10 @@ TextureImporter:
       name: Daco_1717412_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 767.2
-        width: 200.2
-        height: 191.8
+        x: 601
+        y: 767
+        width: 200
+        height: 192
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,7 +147,7 @@ TextureImporter:
       name: Daco_1717412_5
       rect:
         serializedVersion: 2
-        x: 0
+        x: 602
         y: 568
         width: 200
         height: 192

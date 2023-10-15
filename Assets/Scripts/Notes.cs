@@ -9,9 +9,7 @@ public class Notes : MonoBehaviour
     [SerializeField] private float velocidadMovimiento;
     [SerializeField] private float distancia;
     [SerializeField] private LayerMask estaborde;
-    [SerializeField] private bool hacedanio;
 
-    public static bool menosvida;
 
     void Start()
     {
@@ -42,7 +40,6 @@ public class Notes : MonoBehaviour
         if(collision.gameObject.CompareTag("Player"))
         {
             Destroy(gameObject);
-            menosvida = true;     
         }
     }
 }

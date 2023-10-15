@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 800660633000948813}
   - component: {fileID: 1397292014814567598}
   - component: {fileID: 4743545708702935707}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: NotaRojo
   m_TagString: NoteMala
   m_Icon: {fileID: 0}

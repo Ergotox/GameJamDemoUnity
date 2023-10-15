@@ -18,10 +18,14 @@ public class HeroBattle : MonoBehaviour
     [SerializeField] int PuntosSumar;
     [SerializeField] public HUDcontroller hud;
 
+    public Animator animator { get; private set; }
+    private int tempdesp = 0;
+
     void Start()
     {
         Vector2 pos = transform.position;
         print(pos);
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -32,21 +36,30 @@ public class HeroBattle : MonoBehaviour
             pos.y = -1.05f;
             pos.x = -6.96f;
             transform.position = pos;
-            
+            tempdesp = 1;
+
         }else if(Input.GetKeyDown("up")&&pos.y>-2.005f&&pos.y<-0.02f){
             pos.y = 0.93f;
             pos.x = -5.95f;
             transform.position = pos;
+            tempdesp = 1;
         }
         if(Input.GetKeyDown("down")&&pos.y>-0.02f){
             pos.y = -1.05f;
             pos.x = -6.96f;
             transform.position = pos;
-        }else if(Input.GetKeyDown("down")&&pos.y>-2.005f&&pos.y<-0.02f){
+            tempdesp = 1;
+        }
+        else if(Input.GetKeyDown("down")&&pos.y>-2.005f&&pos.y<-0.02f){
             pos.y = -2.99f;
             pos.x = -7.96f;
             transform.position = pos;
+            tempdesp = 1;
         }
+
+
+        animator.SetInteger("Desplazamiento", tempdesp);
+        tempdesp = 0;
 
     }
 
@@ -69,6 +82,7 @@ public class HeroBattle : MonoBehaviour
                 }
                 hud.DesactivarVida(vida);
 
+                //sonar musica de daño
             }
         }
 

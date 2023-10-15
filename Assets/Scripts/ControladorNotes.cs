@@ -152,7 +152,7 @@ public class ControladorNotes : MonoBehaviour
         int numeroNote = secuenciaNotas[indiceNotaActual];
         Vector2 posicion = posiciones[numeroNote];
 
-        Instantiate(notas[numeroNote], posicion, Quaternion.identity);
+        Instantiate(notas[Random.Range(0,notas.Length)], posicion, Quaternion.identity);
 
         indiceNotaActual++;
         if (indiceNotaActual >= secuenciaNotas.Count)

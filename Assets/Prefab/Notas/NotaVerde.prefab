@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4498387121214338298}
   - component: {fileID: 6895367965792519038}
   - component: {fileID: 7010162677573315303}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: NotaVerde
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -198,4 +198,3 @@ MonoBehaviour:
   estaborde:
     serializedVersion: 2
     m_Bits: 8
-  "haceda\xF1o": 0

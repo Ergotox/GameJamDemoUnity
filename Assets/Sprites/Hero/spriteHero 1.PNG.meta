@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: bcfaec6fac84e9941bebbcdb2a96f121
+guid: a52e382f37fa2af4b8ea3968222e5d11
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -72,20 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -123,169 +110,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: idle_0
+      name: spriteHero 1_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 91
-        width: 49
-        height: 78
+        y: 269
+        width: 61
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6fd484f18a65384d9c9258207572904
-      internalID: 356321486
+      spriteID: 3ab8da75be110e143b4bda69442a3dc4
+      internalID: 1879750023
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_1
+      name: spriteHero 1_1
       rect:
         serializedVersion: 2
-        x: 68
-        y: 91
-        width: 49
-        height: 78
+        x: 69
+        y: 269
+        width: 61
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37533dd4371977544b39679576b17958
-      internalID: -1839667833
+      spriteID: f0bb9f75cb4a0164b8e474fd4c573e77
+      internalID: -2053936548
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_2
+      name: spriteHero 1_2
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 269
+        width: 61
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7e9f221b8d92fa4587282a23befa736
+      internalID: 1243480990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteHero 1_3
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 269
+        width: 61
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7a2ffb366dcffb45aeff0d657afc866
+      internalID: 1637123988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteHero 1_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 180
+        width: 61
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c669e32a32d1d234285391c29ca3eff7
+      internalID: 1728925908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteHero 1_5
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 180
+        width: 61
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7436b7239aca444db4648653802a15f
+      internalID: 543208799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteHero 1_6
       rect:
         serializedVersion: 2
         x: 136
-        y: 91
-        width: 49
-        height: 78
+        y: 180
+        width: 61
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 996d298cc64d47941b3e5fb34c4037df
-      internalID: -436817904
+      spriteID: 6f62569dc345f4944833a15807aaad58
+      internalID: 721080374
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_3
+      name: spriteHero 1_7
       rect:
         serializedVersion: 2
-        x: 204
-        y: 91
-        width: 49
-        height: 78
+        x: 212
+        y: 180
+        width: 61
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b777ce161d750534096ce24279b17526
-      internalID: 364158169
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: idle_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1
-        width: 49
-        height: 78
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3a9e5c708c947b8429fa97f91d5cbd3b
-      internalID: 1715429836
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: idle_5
-      rect:
-        serializedVersion: 2
-        x: 65
-        y: 1
-        width: 49
-        height: 78
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 672b8fa0ae8e11f4eb2e05637b2096e0
-      internalID: 1499767749
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dash_0
-      rect:
-        serializedVersion: 2
-        x: 134
-        y: 1
-        width: 57
-        height: 78
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2f7c585bfb8059b42ad7243686be6171
-      internalID: 1156094943
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dash_1
-      rect:
-        serializedVersion: 2
-        x: 211
-        y: 1
-        width: 62
-        height: 78
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 81b290f85d7f0a145a9c1219f19ddef0
-      internalID: -1740509661
+      spriteID: 9ff22c27ecad8014abf9995abaf812a5
+      internalID: 787269114
       vertices: []
       indices: 
       edges: []
@@ -301,14 +288,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      dash_0: 1156094943
-      dash_1: -1740509661
-      idle_0: 356321486
-      idle_1: -1839667833
-      idle_2: -436817904
-      idle_3: 364158169
-      idle_4: 1715429836
-      idle_5: 1499767749
+      spriteHero 1_0: 1879750023
+      spriteHero 1_1: -2053936548
+      spriteHero 1_10: -1362189891
+      spriteHero 1_11: 1968875770
+      spriteHero 1_2: 1243480990
+      spriteHero 1_3: 1637123988
+      spriteHero 1_4: 1728925908
+      spriteHero 1_5: 543208799
+      spriteHero 1_6: 721080374
+      spriteHero 1_7: 787269114
+      spriteHero 1_8: -2018317992
+      spriteHero 1_9: 1943246462
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

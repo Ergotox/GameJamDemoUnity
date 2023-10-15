@@ -5,7 +5,7 @@ using UnityEngine;
 public class HeroMoveExploration : MonoBehaviour
 {
     public Animator animator;
-    public float runSpeed=2;
+    public float runSpeed=5;
     Rigidbody2D rb2D;
     // Start is called before the first frame update
     void Start()

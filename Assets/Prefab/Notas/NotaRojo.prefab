@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 800660633000948813}
   - component: {fileID: 1397292014814567598}
   - component: {fileID: 4743545708702935707}
-  m_Layer: 7
+  - component: {fileID: 7696870788408979061}
+  m_Layer: 0
   m_Name: NotaRojo
   m_TagString: NoteMala
   m_Icon: {fileID: 0}
@@ -76,7 +77,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: -163298477, guid: d4b0cb0f682a30842b1a8a36f9520385, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -198,3 +199,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.9044285, y: 1.061416}
   m_EdgeRadius: 0
+--- !u!114 &7696870788408979061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000304140460037556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fa3f419603ce224b8fbd540104ca60a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FailNote: {fileID: 8300000, guid: a4be2a777ae43154d92f9ff02512f032, type: 3}

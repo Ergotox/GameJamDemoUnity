@@ -68,7 +68,7 @@ public class HeroBattle : MonoBehaviour
         if (collision.gameObject.CompareTag("Note"))
         {
             puntostotales += PuntosSumar;
-            hud.ActulizarPuntos(puntostotales);
+            hud.ActualizarPuntos(puntostotales);
 
         }
         else
@@ -78,15 +78,21 @@ public class HeroBattle : MonoBehaviour
                 vida -= 1;
                 if (vida == 0)
                 {
-                    SceneManager.LoadScene(0);
+                    animator.SetBool("Death", true);
+                     StartCoroutine(LoadSceneAfterDelay(1.0f));
                 }
                 hud.DesactivarVida(vida);
 
-                //sonar musica de daño
+                //sonar musica de danio
             }
         }
 
         
     }
+    IEnumerator LoadSceneAfterDelay(float delay)
+{
+    yield return new WaitForSeconds(delay);
+    SceneManager.LoadScene(0);
+}
 
 }

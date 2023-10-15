@@ -197,4 +197,5 @@ MonoBehaviour:
   distancia: -2
   estaborde:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 0
+  hacedanio: 0

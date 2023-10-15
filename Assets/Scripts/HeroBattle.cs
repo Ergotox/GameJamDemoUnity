@@ -7,9 +7,7 @@ public class HeroBattle : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject dashSpriteUp1;
-    public GameObject dashSpriteUp2;
-    public GameObject dashSpriteDown1;
-    public GameObject dashSpriteDown2;
+  
     void Start()
     {
         Vector2 pos = transform.position;
@@ -24,6 +22,7 @@ public class HeroBattle : MonoBehaviour
             pos.y = -1.05f;
             pos.x = -6.96f;
             transform.position = pos;
+            
         }else if(Input.GetKeyDown("up")&&pos.y>-2.005f&&pos.y<-0.02f){
             pos.y = 0.93f;
             pos.x = -5.95f;

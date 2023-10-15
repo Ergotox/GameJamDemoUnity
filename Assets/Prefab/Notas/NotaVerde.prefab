@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7010162677573315303}
   m_Layer: 0
   m_Name: NotaVerde
-  m_TagString: Untagged
+  m_TagString: Note
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -198,3 +198,4 @@ MonoBehaviour:
   estaborde:
     serializedVersion: 2
     m_Bits: 8
+  "haceda\xF1o": 0

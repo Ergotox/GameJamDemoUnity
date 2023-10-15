@@ -9,6 +9,8 @@ public class Notes : MonoBehaviour
     [SerializeField] private float velocidadMovimiento;
     [SerializeField] private float distancia;
     [SerializeField] private LayerMask estaborde;
+
+
     void Start()
     {
         rgbd2= GetComponent<Rigidbody2D>();
@@ -31,5 +33,13 @@ public class Notes : MonoBehaviour
     {
         Gizmos.color = Color.green;
         Gizmos.DrawLine(transform.position, transform.position + transform.right * distancia);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+        }
     }
 }

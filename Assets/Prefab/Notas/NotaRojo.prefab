@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4743545708702935707}
   m_Layer: 0
   m_Name: NotaRojo
-  m_TagString: Untagged
+  m_TagString: NoteMala
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fd9daeb4c91b2f4ebe8e8a65e8edf98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadMovimiento: -10
+  velocidadMovimiento: -8
   distancia: -2
   estaborde:
     serializedVersion: 2

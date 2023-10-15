@@ -1,13 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 using UnityEngine.UIElements;
+using UnityEngine.Video;
 
 public class HeroBattle : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public static HeroBattle Instance { get; private set; }
+        
+    public int vida = 3;
+    public int puntostotales
+    { 
+        get; private set;
+    }
+    
+    [SerializeField] int PuntosSumar;
+    [SerializeField] public HUDcontroller hud;
 
-  
     void Start()
     {
         Vector2 pos = transform.position;
@@ -37,6 +47,32 @@ public class HeroBattle : MonoBehaviour
             pos.x = -7.96f;
             transform.position = pos;
         }
+
     }
-    
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Note"))
+        {
+            puntostotales += PuntosSumar;
+            hud.ActulizarPuntos(puntostotales);
+
+        }
+        else
+        {
+            if (collision.gameObject.CompareTag("NoteMala"))
+            {
+                vida -= 1;
+                if (vida == 0)
+                {
+                    SceneManager.LoadScene(0);
+                }
+                hud.DesactivarVida(vida);
+
+            }
+        }
+
+        
+    }
+
 }

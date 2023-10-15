@@ -6,7 +6,7 @@ using UnityEngine.UIElements;
 public class HeroBattle : MonoBehaviour
 {
     // Start is called before the first frame update
-    public GameObject dashSpriteUp1;
+
   
     void Start()
     {

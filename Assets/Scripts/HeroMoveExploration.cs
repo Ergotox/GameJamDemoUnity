@@ -42,12 +42,16 @@ public class HeroMoveExploration : MonoBehaviour
             animator.SetBool("Up", false);
             animator.SetBool("Left", false);
             animator.SetBool("Down", false);
-        }else{
-            rb2D.velocity= new Vector2(0, 0);
-            animator.SetBool("Up", false);
+        }
+        if(Input.GetKeyUp("left")){
+            rb2D.velocity= new Vector2(0,0);
             animator.SetBool("Left", false);
+        }else if(Input.GetKeyUp("up")){
+            rb2D.velocity= new Vector2(0,0);
+            animator.SetBool("Up", false);
+        }else if(Input.GetKeyUp("down")){
+            rb2D.velocity= new Vector2(0,0);
             animator.SetBool("Down", false);
-            animator.SetBool("Right", false);
         }
     }
 }

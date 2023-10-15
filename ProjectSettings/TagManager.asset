@@ -3,16 +3,19 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - DownRail
+  - MidRail
+  - UpRail
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Borde
   - Water
   - UI
   - 
-  - 
+  - Notas
   - 
   - 
   - 

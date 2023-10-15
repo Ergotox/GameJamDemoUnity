@@ -1170,7 +1170,7 @@ Transform:
   m_GameObject: {fileID: 1318872460}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.3535388, y: -2.3399937, z: 0.43630925}
+  m_LocalPosition: {x: 1.3535388, y: -2.74, z: 0.43630925}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1678,7 +1678,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.027613536, y: -0.020794958}
+  m_Offset: {x: -0.027613536, y: -0.14673658}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1689,7 +1689,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.33805713, y: 0.62923557}
+  m_Size: {x: 0.33805713, y: 0.35869476}
   m_EdgeRadius: 0
 --- !u!95 &1829159287
 Animator:
@@ -1791,7 +1791,7 @@ GameObject:
   - component: {fileID: 1863422477}
   - component: {fileID: 1863422476}
   m_Layer: 0
-  m_Name: enemy_idle_0
+  m_Name: Boss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1900,7 +1900,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2116951206
 Transform:
   m_ObjectHideFlags: 0

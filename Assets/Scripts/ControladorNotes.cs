@@ -12,13 +12,129 @@ public class ControladorNotes : MonoBehaviour
 
     private float siguienteNote;
 
-
-    private float[] posicionY;
-
-    void Start()
+    private List<Vector2> posiciones = new List<Vector2>()
     {
-        posicionY = new float[]{0.349f, -1.625f, -3.653f};
-    }
+        new Vector2(7.62f, 0.349f),
+        new Vector2(7.62f, -1.625f),
+        new Vector2(7.62f, -3.653f)
+    };
+
+    private List<int> secuenciaNotas = new List<int>()
+    {
+        2, // índice de la primera nota en el array de notas
+        1, // índice de la segunda nota en el array de notas
+        0, // índice de la tercera nota en el array de notas
+        1, // índice de la cuarta nota en el array de notas
+        2, // índice de la quinta nota en el array de notas
+        1,
+        0,
+        1,
+        2,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0,
+        1,
+        2,
+        1,
+        2,
+        1,
+        2,
+        1,  // primera secuencia
+        2,
+        1,
+        0,
+        1,
+        2,
+        1,
+        0,
+        1,
+        2,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0,
+        1,
+        2,
+        1,
+        2,
+        1,
+        2,
+        1, // segunda secuencia
+        2,
+        1,
+        0,
+        1,
+        2,
+        1,
+        0,
+        1,
+        2,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0,
+        1,
+        2,
+        1,
+        2,
+        1,
+        2,
+        1, // tercera secuencia
+        2,
+        1,
+        0,
+        1,
+        2,
+        1,
+        0,
+        1,
+        2,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0,
+        1,
+        2,
+        1,
+        2,
+        1,
+        2,
+        1, // cuarta secuencia
+        2,
+        1,
+        0,
+        1,
+        2,
+        1,
+        0,
+        1,
+        2,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0,
+        1,
+        2,
+        1,
+        2,
+        1,
+        2,
+        1, // quinta secuencia
+        
+    };
+
+    private int indiceNotaActual = 0;
 
     void Update()
     {
@@ -33,11 +149,15 @@ public class ControladorNotes : MonoBehaviour
 
     private void CrearNote()
     {
-        int numeroNote = Random.Range(0, notas.Length);
+        int numeroNote = secuenciaNotas[indiceNotaActual];
+        Vector2 posicion = posiciones[numeroNote];
 
-        int random = Random.Range(0, 3);
-        Vector2 posicionAleatoria = new Vector2(7.62f, posicionY[random]);
+        Instantiate(notas[numeroNote], posicion, Quaternion.identity);
 
-        Instantiate(notas[numeroNote], posicionAleatoria, Quaternion.identity);
+        indiceNotaActual++;
+        if (indiceNotaActual >= secuenciaNotas.Count)
+        {
+            indiceNotaActual = 0;
+        }
     }
 }

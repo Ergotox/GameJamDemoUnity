@@ -17,7 +17,7 @@ public class HUDcontroller : MonoBehaviour
         }
     }
 
-    public void ActulizarPuntos(int puntoTotales)
+    public void ActualizarPuntos(int puntoTotales)
     {
         puntos.text = puntoTotales.ToString();
     }

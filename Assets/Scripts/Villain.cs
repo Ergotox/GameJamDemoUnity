@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Villain : MonoBehaviour
 {
@@ -19,6 +21,7 @@ public class Villain : MonoBehaviour
         if (vida <= 0)
         {
             Muerte();
+            SceneManager.LoadScene(0);
         }
     }
 

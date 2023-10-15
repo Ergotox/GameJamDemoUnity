@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -206,6 +206,174 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: enemyTransform_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 309
+        width: 57
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a94854df993e4c4686b0d98f71bdad0
+      internalID: 1365633995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_idle_5
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 23
+        width: 130
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 617d0bd22eefab846876b0550e96fab6
+      internalID: -1660604853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemyTransform_1
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 309
+        width: 57
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25c16aecb145b514d940d46dd14ef85d
+      internalID: -1194384643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemyTransform_2
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 309
+        width: 57
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 190ca9c5fb0b9b94f80b9b6f7cb058db
+      internalID: -1198511178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemyTransform_3
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 309
+        width: 57
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05086ab3bcd9e3241b498bd6824e4a72
+      internalID: 1804300158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemyTransform_4
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 195
+        width: 62
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f0ec3bac5f1aed43a3370eaa424add9
+      internalID: -1073903533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemyTransform_5
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 195
+        width: 62
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea31f4c017350aa42b4f48bc4f9d8a3c
+      internalID: -152539199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemyTransform_6
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 195
+        width: 62
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fddffd11388df44f935788ed3e9d407
+      internalID: -1295536995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -217,18 +385,19 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      enemyTransform_0: -1811400637
+      enemyTransform_1: -1086716429
+      enemyTransform_2: -1483427587
+      enemyTransform_3: 1804300158
+      enemyTransform_4: -1013534455
+      enemyTransform_5: 465940817
+      enemyTransform_6: 2141040258
       enemy_idle_0: -1750528423
       enemy_idle_1: 806941923
-      enemy_idle_10: 465940817
-      enemy_idle_11: 2141040258
       enemy_idle_12: 278330143
       enemy_idle_2: -223495952
       enemy_idle_3: -1575179530
-      enemy_idle_4: -1811400637
       enemy_idle_5: -1660604853
-      enemy_idle_6: -1086716429
-      enemy_idle_7: -1483427587
-      enemy_idle_9: -1013534455
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

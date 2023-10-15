@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,7 +121,175 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Sprites_Batalla_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 84.5
+        width: 68.75
+        height: 84.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30951f1f6570bea4880dfc8ba3e2b897
+      internalID: -1367687413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites_Batalla_1
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 84.5
+        width: 68.75
+        height: 84.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a66bf73471ad54641b830ce1d9171b44
+      internalID: 1719511901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites_Batalla_2
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 84.5
+        width: 68.75
+        height: 84.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c432d31ccef22a94bb5dabfdc6972947
+      internalID: 658753443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites_Batalla_3
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 84.5
+        width: 68.75
+        height: 84.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b0eecf17a769dd4bae4652a5c84c1b2
+      internalID: -605941825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites_Batalla_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.5
+        width: 68.75
+        height: 84.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed2d4e8ae475ed942b18b409cc6be8d2
+      internalID: 1197230302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites_Batalla_5
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 0.5
+        width: 68.75
+        height: 84.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca09358b41ea25040b1ae82759b2362a
+      internalID: -782163891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites_Batalla_6
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 0.5
+        width: 68.75
+        height: 84.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b0788f39c3c63e4d8bb156852dcf2d1
+      internalID: 1034409008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites_Batalla_7
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 0.5
+        width: 68.75
+        height: 84.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbfd06c1528424446bab75a862e5332b
+      internalID: -1168620319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +300,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Sprites_Batalla_0: -1367687413
+      Sprites_Batalla_1: 1719511901
+      Sprites_Batalla_2: 658753443
+      Sprites_Batalla_3: -605941825
+      Sprites_Batalla_4: 1197230302
+      Sprites_Batalla_5: -782163891
+      Sprites_Batalla_6: 1034409008
+      Sprites_Batalla_7: -1168620319
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

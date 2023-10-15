@@ -39,8 +39,5 @@ public class ControladorNotes : MonoBehaviour
         Vector2 posicionAleatoria = new Vector2(7.62f, posicionY[random]);
 
         Instantiate(notas[numeroNote], posicionAleatoria, Quaternion.identity);
-
-
-
     }
 }

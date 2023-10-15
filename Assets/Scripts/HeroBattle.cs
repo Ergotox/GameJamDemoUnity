@@ -7,7 +7,8 @@ public class HeroBattle : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject dashSpriteUp1;
-  
+    public static int vida = 3;
+
     void Start()
     {
         Vector2 pos = transform.position;
@@ -37,6 +38,7 @@ public class HeroBattle : MonoBehaviour
             pos.x = -7.96f;
             transform.position = pos;
         }
+
     }
     
 }

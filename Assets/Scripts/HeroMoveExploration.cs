@@ -19,29 +19,16 @@ public class HeroMoveExploration : MonoBehaviour
     {
         if(Input.GetKey("up")){
             rb2D.velocity= new Vector2(rb2D.velocity.x,runSpeed);
-            animator.SetBool("Up", true);
-            animator.SetBool("Left", false);
-            animator.SetBool("Down", false);
-            animator.SetBool("Right", false);
+            
         }else if(Input.GetKey("left")){
             rb2D.velocity= new Vector2(-runSpeed, rb2D.velocity.y);
-            animator.SetBool("Left", true);
-            animator.SetBool("Up", false);
-            animator.SetBool("Down", false);
-            animator.SetBool("Right", false);
+            
         }
         else if(Input.GetKey("down")){
             rb2D.velocity= new Vector2(rb2D.velocity.x,-runSpeed);
-            animator.SetBool("Down", true);
-            animator.SetBool("Up", false);
-            animator.SetBool("Left", false);
-            animator.SetBool("Right", false);
+           
         }else if(Input.GetKey("right")){
             rb2D.velocity= new Vector2(runSpeed, rb2D.velocity.y);
-            animator.SetBool("Right", true);
-            animator.SetBool("Up", false);
-            animator.SetBool("Left", false);
-            animator.SetBool("Down", false);
         }
         if(Input.GetKeyUp("left")){
             rb2D.velocity= new Vector2(0,0);

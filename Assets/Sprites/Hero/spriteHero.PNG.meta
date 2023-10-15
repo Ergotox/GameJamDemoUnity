@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9a0f6da022e861b4a9290815715d2b32
+guid: d50d87e02206dd8468ad58f8ea858b5b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -81,19 +81,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -123,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: buttons 1_0
+      name: spriteHero_9
       rect:
         serializedVersion: 2
-        x: 16
-        y: 80
-        width: 68
-        height: 24
+        x: 0
+        y: 2
+        width: 69
+        height: 84
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d19c89ca1392f7469c8576f637a39d7
-      internalID: 424204389
+      spriteID: 1e5fc64f4028a9249a95983e4e5edbcf
+      internalID: 1177440808
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: buttons 1_1
+      name: spriteHero_10
       rect:
         serializedVersion: 2
-        x: 116
-        y: 80
-        width: 68
-        height: 24
+        x: 84
+        y: 2
+        width: 97
+        height: 84
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,92 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2cadeb00e10b9f44a340859db093a74
-      internalID: 1492642159
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buttons 1_2
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 49
-        width: 68
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3362755da9ccb6d4d9100fd974fb3e54
-      internalID: 136860131
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buttons 1_3
-      rect:
-        serializedVersion: 2
-        x: 116
-        y: 49
-        width: 68
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9d9f2a03d94e2b4478b06dbc478b5a19
-      internalID: 2013046087
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buttons 1_4
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 18
-        width: 68
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1f8b508c1e92fa042a92c45600ab66fb
-      internalID: 1018273462
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: buttons 1_5
-      rect:
-        serializedVersion: 2
-        x: 116
-        y: 18
-        width: 68
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8547c066c8920a1469f1c82aa99d0fbc
-      internalID: 1016877776
+      spriteID: 2954a16267ffcfe429a52ca3596fad63
+      internalID: 1072399475
       vertices: []
       indices: 
       edges: []
@@ -259,12 +162,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      buttons 1_0: 424204389
-      buttons 1_1: 1492642159
-      buttons 1_2: 136860131
-      buttons 1_3: 2013046087
-      buttons 1_4: 1018273462
-      buttons 1_5: 1016877776
+      spriteHero_0: -733345078
+      spriteHero_1: -1029896333
+      spriteHero_10: 1072399475
+      spriteHero_11: -737451208
+      spriteHero_2: -237056500
+      spriteHero_3: -1235581268
+      spriteHero_4: 342792409
+      spriteHero_5: 830653285
+      spriteHero_6: -869293218
+      spriteHero_7: -2094947140
+      spriteHero_8: -466375317
+      spriteHero_9: 1177440808
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

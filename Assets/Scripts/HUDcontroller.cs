@@ -11,13 +11,13 @@ public class HUDcontroller : MonoBehaviour
 
     void Update()
     {
-        if (HeroBattle.Instance != null){
+        if (HeroBattle.Instance != null)
+        {
             puntos.text = HeroBattle.Instance.puntostotales.ToString();
         }
-        
     }
 
-    public void ActualizarPuntos(int puntoTotales)
+    public void ActulizarPuntos(int puntoTotales)
     {
         puntos.text = puntoTotales.ToString();
     }

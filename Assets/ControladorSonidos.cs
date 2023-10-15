@@ -9,16 +9,9 @@ public class ControladorSonidos : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-        }
-        else
-        {
-            // Si ya hay una instancia, destruir este objeto
-            Destroy(this.gameObject);
-        }
-
+       
+        Instance = this;
+        
         audioSource = GetComponent<AudioSource>();
     }
 

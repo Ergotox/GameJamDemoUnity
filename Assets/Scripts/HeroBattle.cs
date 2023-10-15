@@ -4,13 +4,11 @@ using UnityEngine.SceneManagement;
 using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.Video;
-using System.IO;
 
 public class HeroBattle : MonoBehaviour
 {
     public static HeroBattle Instance { get; private set; }
-    private bool keyIsPressed = false;
-    private string logFilePath = "keylog.txt";
+        
     public int vida = 3;
     public int puntostotales
     { 
@@ -20,13 +18,14 @@ public class HeroBattle : MonoBehaviour
     [SerializeField] int PuntosSumar;
     [SerializeField] public HUDcontroller hud;
 
+    public Animator animator { get; private set; }
+    private int tempdesp = 0;
+
     void Start()
     {
         Vector2 pos = transform.position;
-        if (File.Exists(logFilePath))
-        {
-            File.Delete(logFilePath);
-        }
+        print(pos);
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -37,45 +36,31 @@ public class HeroBattle : MonoBehaviour
             pos.y = -1.05f;
             pos.x = -6.96f;
             transform.position = pos;
-            
+            tempdesp = 1;
+
         }else if(Input.GetKeyDown("up")&&pos.y>-2.005f&&pos.y<-0.02f){
             pos.y = 0.93f;
             pos.x = -5.95f;
             transform.position = pos;
+            tempdesp = 1;
         }
         if(Input.GetKeyDown("down")&&pos.y>-0.02f){
             pos.y = -1.05f;
             pos.x = -6.96f;
             transform.position = pos;
-        }else if(Input.GetKeyDown("down")&&pos.y>-2.005f&&pos.y<-0.02f){
+            tempdesp = 1;
+        }
+        else if(Input.GetKeyDown("down")&&pos.y>-2.005f&&pos.y<-0.02f){
             pos.y = -2.99f;
             pos.x = -7.96f;
             transform.position = pos;
+            tempdesp = 1;
         }
 
-        //tener las teclas presionadas
-        if (Input.GetKeyDown(KeyCode.U))
-        {
-            keyIsPressed = true;
-            string logMessage = "Key pressed at time " + Time.realtimeSinceStartup+ "position x: -5.95f y: 0.93f" ;
-            WriteLogToFile(logMessage);
-        }
-        else if (Input.GetKeyDown(KeyCode.J))
-        {
-            keyIsPressed = true;
-            string logMessage = "Key pressed at time " + Time.realtimeSinceStartup+"position x: -6.96f y: -1.05f";
-            WriteLogToFile(logMessage);
-        }
-        else if (Input.GetKeyDown(KeyCode.M))
-        {
-            keyIsPressed = true;
-            string logMessage = "Key pressed at time " + Time.realtimeSinceStartup+"position x: -7.96f y: -2.99ff";
-            WriteLogToFile(logMessage);
-        }
-        else if (keyIsPressed && !Input.anyKey)
-        {
-            keyIsPressed = false;
-        }
+
+        animator.SetInteger("Desplazamiento", tempdesp);
+        tempdesp = 0;
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -83,7 +68,7 @@ public class HeroBattle : MonoBehaviour
         if (collision.gameObject.CompareTag("Note"))
         {
             puntostotales += PuntosSumar;
-            hud.ActualizarPuntos(puntostotales);
+            hud.ActulizarPuntos(puntostotales);
 
         }
         else
@@ -97,17 +82,11 @@ public class HeroBattle : MonoBehaviour
                 }
                 hud.DesactivarVida(vida);
 
+                //sonar musica de daño
             }
         }
 
         
-    }
-    void WriteLogToFile(string message)
-    {
-        using (StreamWriter writer = new StreamWriter(logFilePath, true))
-        {
-            writer.WriteLine(message);
-        }
     }
 
 }

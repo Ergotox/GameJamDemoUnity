@@ -55,7 +55,7 @@ public class HeroBattle : MonoBehaviour
         if (collision.gameObject.CompareTag("Note"))
         {
             puntostotales += PuntosSumar;
-            hud.ActulizarPuntos(puntostotales);
+            hud.ActualizarPuntos(puntostotales);
 
         }
         else

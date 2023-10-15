@@ -74,5 +74,11 @@ public class HeroBattle : MonoBehaviour
 
         
     }
+    void OnGUI(){
+        if (Event.current.isKey)
+        {
+            Debug.Log("Key pressed at time " + Time.realtimeSinceStartup);
+        }
+    }
 
 }

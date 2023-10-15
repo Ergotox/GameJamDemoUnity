@@ -42,7 +42,7 @@ public class Notes : MonoBehaviour
         if(collision.gameObject.CompareTag("Player"))
         {
             Destroy(gameObject);
-            menosvida = true;
+            menosvida = true;     
         }
     }
 }

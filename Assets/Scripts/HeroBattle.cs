@@ -70,7 +70,7 @@ public class HeroBattle : MonoBehaviour
             puntostotales += PuntosSumar;
             hud.ActualizarPuntos(puntostotales);
             
-            BarraPoder.Instance.CambiarPoder();
+            //BarraPoder.Instance.CambiarPoder();
             
         }
         else
@@ -83,7 +83,7 @@ public class HeroBattle : MonoBehaviour
 
                     animator.SetBool("Muerte", true);
                     
-                    SceneManager.LoadScene(0);
+                    SceneManager.LoadScene(2);
                 }
                 hud.DesactivarVida(vida);
 
@@ -92,6 +92,12 @@ public class HeroBattle : MonoBehaviour
         }
 
         
+    }
+
+
+    public void AnimacionGanador()
+    {
+        animator.SetBool("Ganador", true);
     }
 
 }

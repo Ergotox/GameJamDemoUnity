@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7981159348090568387}
   - component: {fileID: 142460916823555533}
   m_Layer: 7
-  m_Name: NotaAzul
+  m_Name: NotaAmarilla
   m_TagString: Note
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 7.62, y: 0.349, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: -163298477, guid: 1e69cb81003aea249abf17a0b5e96254, type: 3}
+  m_Sprite: {fileID: 1463624602, guid: 3865460081410354ab3214857d98f392, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -98,7 +98,7 @@ Animator:
   m_GameObject: {fileID: 4234939055801835503}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 68fa70b2d98c3764881f0524bf65aae0, type: 2}
+  m_Controller: {fileID: 9100000, guid: 958183b6edf506d4ea940cb7c0342b5f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -141,18 +141,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.71015}
+  m_Offset: {x: 0.004239723, y: 0.20990834}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.125, y: 3}
+    oldSize: {x: 0.625, y: 1.21875}
     newSize: {x: 3.128125, y: 2.996875}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.128125, y: 1.18922}
+  m_Size: {x: 0.6099596, y: 0.85007316}
   m_EdgeRadius: 0
 --- !u!50 &7981159348090568387
 Rigidbody2D:

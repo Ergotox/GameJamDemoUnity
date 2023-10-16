@@ -6,12 +6,12 @@ using UnityEngine.SceneManagement;
 public class Villain : MonoBehaviour
 {
     [SerializeField] private float vida;
+    [SerializeField] private HeroBattle hero;
     private Animator animator;
 
     private void Start()
     {
         animator = GetComponent<Animator>();
-
     }
 
     public void TomarDanio(float danio)
@@ -19,8 +19,16 @@ public class Villain : MonoBehaviour
         vida -= danio;
         if (vida <= 0)
         {
+            hero.AnimacionGanador();
+
+
             Muerte();
-            SceneManager.LoadScene(0);
+
+
+            Invoke("LoadSceneAfterDelay", 5.0f);
+
+            SceneManager.LoadScene(2);
+
         }
     }
 
@@ -28,5 +36,9 @@ public class Villain : MonoBehaviour
     {
         //llamar la animacion "Muerte"
         Destroy(gameObject);
+    }
+
+    void LoadSceneAfterDelay()
+    {
     }
 }

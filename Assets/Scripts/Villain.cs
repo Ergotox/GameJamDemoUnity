@@ -7,6 +7,7 @@ public class Villain : MonoBehaviour
 {
     [SerializeField] private float vida;
     [SerializeField] private HeroBattle hero;
+    [SerializeField] private VidaBoss vidaBoss;
     private Animator animator;
 
     private void Start()
@@ -17,6 +18,9 @@ public class Villain : MonoBehaviour
     public void TomarDanio(float danio)
     {
         vida -= danio;
+
+        vidaBoss.ActualizarBarraVidaBoss();
+
         if (vida <= 0)
         {
             hero.AnimacionGanador();
@@ -24,8 +28,6 @@ public class Villain : MonoBehaviour
 
             Muerte();
 
-
-            Invoke("LoadSceneAfterDelay", 5.0f);
 
             SceneManager.LoadScene(2);
 
@@ -38,7 +40,4 @@ public class Villain : MonoBehaviour
         Destroy(gameObject);
     }
 
-    void LoadSceneAfterDelay()
-    {
-    }
 }

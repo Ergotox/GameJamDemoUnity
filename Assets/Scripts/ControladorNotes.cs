@@ -11,7 +11,6 @@ public class ControladorNotes : MonoBehaviour
 
     public bool startPlaying;
 
-    [SerializeField] private Transform[] puntos;
     [SerializeField] private GameObject[] notas;
 
     [SerializeField] private float tiempoNotas;

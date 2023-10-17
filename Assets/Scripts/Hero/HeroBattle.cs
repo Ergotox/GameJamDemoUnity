@@ -17,6 +17,7 @@ public class HeroBattle : MonoBehaviour
     
     [SerializeField] int PuntosSumar;
     [SerializeField] public HUDcontroller hud;
+    [SerializeField] private BarraPoder barraPoder;
 
     public Animator animator { get; private set; }
     private int tempdesp = 0;
@@ -68,16 +69,14 @@ public class HeroBattle : MonoBehaviour
         if (collision.gameObject.CompareTag("Note"))
         {
             puntostotales += PuntosSumar;
-            hud.ActualizarPuntos(puntostotales);
-            
-            //BarraPoder.Instance.CambiarPoder();
-            
+            barraPoder.AumentarBarra();
         }
         else
         {
             if (collision.gameObject.CompareTag("NoteMala"))
             {
                 vida -= 1;
+                puntostotales -= PuntosSumar;
                 if (vida == 0)
                 {
 
@@ -86,12 +85,14 @@ public class HeroBattle : MonoBehaviour
                     SceneManager.LoadScene(2);
                 }
                 hud.DesactivarVida(vida);
-
+                barraPoder.BajarBarra();
                 //sonar musica de daño
             }
         }
 
-        
+        hud.ActualizarPuntos(puntostotales);
+        barraPoder.CambiarPoder();
+
     }
 
 

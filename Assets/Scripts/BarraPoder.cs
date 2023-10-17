@@ -1,26 +1,69 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BarraPoder : MonoBehaviour
 {
-    public static BarraPoder Instance { get; private set; }
-    public Animator animator;
-    private int a = 0;
+    [SerializeField] private Image barra;
+    [SerializeField] private GameObject animacionBarra; 
+
+    private float a;
+    private float carga = 0;
+    private float cargaQueue = 0;
+    public bool barrallena = false;
 
     private void Start()
     {
-        animator = GetComponent<Animator>();
+
     }
 
     public void CambiarPoder()
     {
-        a++;
-        animator.SetInteger("estado", a);
+        
+        a = carga / 10;
 
-        if (a == 9)
+        barra.fillAmount = a;
+
+        if (a == 1)
         {
-            a = 0;
+            animacionBarra.gameObject.SetActive(true);
+            barrallena= true;
+            
+        }
+        else
+        {
+            if (barrallena == true && a < 1)
+            {
+                animacionBarra.gameObject.SetActive(false);
+                barrallena = false;
+            }
+
+            if (a>1)
+            {
+                cargaQueue++;
+            }
         }
     }
+
+    public void AumentarBarra()
+    {
+        carga += 1;
+    }
+    public void BajarBarra()
+    {
+        carga -= 1;
+    }
+
+    public void VolverBarraZero()
+    {
+        barra.fillAmount = 0;
+        a = 0;
+        carga= cargaQueue;
+        animacionBarra.gameObject.SetActive(false);
+        CambiarPoder();
+        cargaQueue = 0;
+    }
+
+
 }

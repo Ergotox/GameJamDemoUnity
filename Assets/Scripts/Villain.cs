@@ -25,13 +25,25 @@ public class Villain : MonoBehaviour
         {
             hero.AnimacionGanador();
 
+            //Invoke("CargarScene", 1.5f);
+            StartCoroutine(DemorarCargarScene());
 
-            Muerte();
-
-
-            SceneManager.LoadScene(2);
+            //Muerte(); 
 
         }
+    }
+
+    private IEnumerator DemorarCargarScene()
+    {
+        Time.timeScale = 0f;
+        yield return new WaitForSecondsRealtime(1.2f); // el WaitForSecondsRealtime no se para por mas que el timescale este en 0
+        SceneManager.LoadScene(2);
+
+    }
+
+    public void CargarScene()
+    {
+        SceneManager.LoadScene(2);
     }
 
     private void Muerte()

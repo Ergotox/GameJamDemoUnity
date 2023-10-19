@@ -135,7 +135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 10
-  danio: 50
+  danio: 10
 --- !u!50 &-6369750648307203484
 Rigidbody2D:
   serializedVersion: 4

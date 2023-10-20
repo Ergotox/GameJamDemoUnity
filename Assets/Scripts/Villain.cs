@@ -39,7 +39,7 @@ public class Villain : MonoBehaviour
         Time.timeScale = 0f;
         yield return new WaitForSecondsRealtime(1.1f); // el WaitForSecondsRealtime no se para por mas que el timescale este en 0
         SceneManager.LoadScene(2);
-
+        Time.timeScale = 1f;
     }
 
     public void CargarScene()

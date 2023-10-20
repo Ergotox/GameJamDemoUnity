@@ -8,7 +8,8 @@ using UnityEngine.Video;
 public class HeroBattle : MonoBehaviour
 {
     public static HeroBattle Instance { get; private set; }
-        
+    
+    public GameObject timer;
     public int vida = 3;
     public int puntostotales
     { 
@@ -85,10 +86,14 @@ public class HeroBattle : MonoBehaviour
                 }
                 hud.DesactivarVida(vida);
                 barraPoder.BajarBarra();
-                //sonar musica de daño
+                //sonar musica de daï¿½o
             }
         }
-
+        if(timer.GetComponent<Timer>().timer<=0){
+            animator.SetBool("Muerte", true);
+            StartCoroutine(DemorarCargarScene());
+        }
+        
         hud.ActualizarPuntos(puntostotales);
         barraPoder.CambiarPoder();
 

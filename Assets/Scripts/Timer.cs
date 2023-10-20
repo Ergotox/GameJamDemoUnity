@@ -8,7 +8,8 @@ public class Timer : MonoBehaviour
 {
     // Start is called before the first frame update
     public string levelToLoad;
-    private float timer= 70f;
+    public Animator animator { get; private set; }
+    public float timer= 70f;
     private Text timerSeconds;
     void Start()
     {
@@ -20,8 +21,6 @@ public class Timer : MonoBehaviour
     {
         timer -= Time.deltaTime;
         timerSeconds.text = timer.ToString("f0");
-        if(timer<=0){
-            SceneManager.LoadScene(levelToLoad);
-        }
+    
     }
 }

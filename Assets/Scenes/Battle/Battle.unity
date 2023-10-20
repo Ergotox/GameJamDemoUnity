@@ -912,6 +912,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelToLoad: FinalGanasteDemo
+  timer: 70
 --- !u!114 &429886503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -945,7 +946,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 90
+  m_Text: 70
 --- !u!222 &429886504
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2977,6 +2978,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dff01bd9694f4024e960cfe3538c0c44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timer: {fileID: 429886500}
   vida: 3
   PuntosSumar: 1
   hud: {fileID: 535956165}
@@ -3266,7 +3268,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -36.829384, y: 0, z: 15.006088, w: 6.285614}
+  m_margin: {x: -36.829384, y: 0, z: 101.152176, w: 6.285614}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

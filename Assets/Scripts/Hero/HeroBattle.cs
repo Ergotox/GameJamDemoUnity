@@ -81,8 +81,7 @@ public class HeroBattle : MonoBehaviour
                 {
 
                     animator.SetBool("Muerte", true);
-                    
-                    SceneManager.LoadScene(2);
+                    StartCoroutine(DemorarCargarScene());
                 }
                 hud.DesactivarVida(vida);
                 barraPoder.BajarBarra();
@@ -95,7 +94,13 @@ public class HeroBattle : MonoBehaviour
 
     }
 
-
+    private IEnumerator DemorarCargarScene()
+    {
+        Time.timeScale = 0f;
+        yield return new WaitForSecondsRealtime(1f); // el WaitForSecondsRealtime no se para por mas que el timescale este en 0
+        SceneManager.LoadScene(2);
+        Time.timeScale = 1f;
+    }
     public void AnimacionGanador()
     {
         animator.SetBool("Ganador", true);

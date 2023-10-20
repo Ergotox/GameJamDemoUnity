@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu/FinalGanasteDemo.unity
     guid: a858a7d5df9bd6c46aabec39851a9e9f
+  - enabled: 1
+    path: Assets/Scenes/Battle/Intro.unity
+    guid: d6f05271ba0b0704d9f66cba20a2b93a
   m_configObjects: {}

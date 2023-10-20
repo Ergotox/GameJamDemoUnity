@@ -1277,7 +1277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 929136300d68b4443a40da4ab839ec61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida: 50
+  vida: 10
   hero: {fileID: 1829159285}
   vidaBoss: {fileID: 644236339}
 --- !u!95 &644236336
@@ -1559,7 +1559,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 3844a925f00f31446b0baf3e23e01b07, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 391b96d95eb53294184cc45c15e1ca75, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
